@@ -1,6 +1,9 @@
 import React from "react";
+import TextInput from "./common/TextInput";
 
 function CourseForm(props) {
+
+
     return (
     <form>
         <div className="form-group">
