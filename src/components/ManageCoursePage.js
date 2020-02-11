@@ -11,9 +11,21 @@ function ManageCoursePage(props) {
         category: ""
     });
 
-    function handleTitleChange(event) {
-        const updatedCourse = {...course, title: event.target.value};
+    function handleChange({target}) {
+        /*
+            by putting the target in {} it is the same as doing this:
+            target = event.target.  This is Javascript de-structoring.
+            This can also be use in the code below by changing it from:
+            const updatedCourse = {...course, [target.name]: target.value};
         setCourse(updatedCourse);
+            to this:
+            setCourse({...course,
+                [target.name]: target.value}
+                );
+         */
+        setCourse({...course,
+                [target.name]: target.value}
+                );
     }
 
     return (
@@ -28,7 +40,7 @@ function ManageCoursePage(props) {
             />
             <CourseForm
                 course={course}
-                onTitleChange={handleTitleChange}
+                onChange={handleChange}
             />
         </>
     )
