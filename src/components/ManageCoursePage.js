@@ -3,6 +3,7 @@ import * as courseApi from "../api/courseApi";
 
 import {Prompt} from "react-router-dom";
 import CourseForm from "./CourseForm";
+import { toast } from "react-toastify";;
 
 function ManageCoursePage(props) {
     const [course, setCourse] = useState({
@@ -32,7 +33,11 @@ function ManageCoursePage(props) {
     
     function handleSubmit(event) {
         event.preventDefault();
-        courseApi.saveCourse(course);
+        courseApi.saveCourse(course)
+            .then( () => {
+                props.history.push("/courses");
+                toast.success("Course Saved");
+            });
     }
 
     return (
