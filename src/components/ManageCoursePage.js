@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import * as courseApi from "../api/courseApi";
+
 import {Prompt} from "react-router-dom";
 import CourseForm from "./CourseForm";
 
@@ -27,6 +29,11 @@ function ManageCoursePage(props) {
                 [target.name]: target.value}
                 );
     }
+    
+    function handleSubmit(event) {
+        event.preventDefault();
+        courseApi.saveCourse(course);
+    }
 
     return (
         <>
@@ -41,6 +48,7 @@ function ManageCoursePage(props) {
             <CourseForm
                 course={course}
                 onChange={handleChange}
+                onSubmit={handleSubmit}
             />
         </>
     )
