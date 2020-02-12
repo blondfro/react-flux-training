@@ -72,19 +72,11 @@
     },
     {
       "id": 11,
-      "slug": "erfaf",
-      "title": "erfaf",
-      "authorId": 2,
-      "category": "faefa",
-      "createdAt": 1581466125609
-    },
-    {
-      "id": 12,
-      "slug": "erfaf",
-      "title": "erfaf",
-      "authorId": 2,
-      "category": "faefa",
-      "createdAt": 1581466138538
+      "slug": "feaf",
+      "title": "feaf",
+      "authorId": 1,
+      "category": "eee",
+      "createdAt": 1581466994956
     }
   ],
   "authors": [
