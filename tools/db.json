@@ -2,14 +2,14 @@
   "courses": [
     {
       "id": 1,
-      "title": "Securing React Apps with Auth0",
+      "title": "Securing React Apps with Auth03",
       "slug": "react-auth0-authentication-security",
       "authorId": 1,
       "category": "JavaScript"
     },
     {
       "id": 2,
-      "title": "React: The Big Picture",
+      "title": "React: The Big Picture ab",
       "slug": "react-big-picture",
       "authorId": 1,
       "category": "JavaScript"
@@ -85,6 +85,14 @@
       "authorId": 1,
       "category": "efe",
       "createdAt": 1581563001525
+    },
+    {
+      "id": 13,
+      "slug": "eaere",
+      "title": "eaere 2",
+      "authorId": 2,
+      "category": "ertawq",
+      "createdAt": 1581637379938
     }
   ],
   "authors": [
