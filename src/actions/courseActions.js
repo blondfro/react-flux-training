@@ -21,3 +21,14 @@ export function loadCourses() {
         });
     })
 }
+
+export function deleteCourse(id) {
+    return courseApi.deleteCourse(id).then( () => {
+        dispatcher.dispatch({
+            actionType: actionTypes.DELETE_COURSE,
+            id: id
+        })
+        }
+
+    )
+}
